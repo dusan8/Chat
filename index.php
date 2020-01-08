@@ -208,11 +208,17 @@ if ($banned=1 && $user_ip==$ip)
 			<td>
 			<?php
 			$infosql = "SELECT username FROM personalinfo WHERE username='$tempus' ";
-				$queryinfo=$con->query($infosql);
-				$info="";
-				while($row = $queryinfo->fetch_assoc()){
-					$info ="avatars/".$row['username']."_avatar.jpg";
-				}
+			$queryinfo=$con->query($infosql);
+			$info="";
+			while($row = $queryinfo->fetch_assoc()){
+				$info ="avatars/".$row['username']."_avatar.jpg";
+			}
+				
+			if (file_exists($info)) {
+			$info=$info;
+			} else {
+				$info ="avatars/default.jpg";
+			}
 				
 			?>
 				<img src="<?php echo $info; ?>" />

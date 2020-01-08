@@ -67,30 +67,45 @@ $data = ob_get_clean();
  <tr>
 
     <td>
-			<?php
-			$infosql = "SELECT username FROM personalinfo WHERE id='$id'";
-				$queryinfo=$con->query($infosql);
-				$info="";
-				while($row = $queryinfo->fetch_assoc()){
-          
-					$info ="avatars/".$row['username']."_avatar.jpg";
-				}
-				
-        if (file_exists($info)) {
-            $info=$info;
-        } else {
-            $info ="avatars/default.jpg";
-        }
+<?php
+			
+		function getInfoUserPage($s,$id){
+			require('db/db.php');
+			
+			$infosql = "SELECT DISTINCT ".$s." FROM personalinfo WHERE id='$id' ";
+			$queryinfo=$con->query($infosql);
+			$info="";
+			while($row = $queryinfo->fetch_assoc()){
+				$info = $row[''.$s.''];
+			}
+			echo "<td>".$s.": </td><td>$info</td>";	
+		
+		}
+		
+		
+		$infosql = "SELECT username FROM personalinfo WHERE id='$id'";
+			$queryinfo=$con->query($infosql);
+			$info="";
+			while($row = $queryinfo->fetch_assoc()){
+	  
+				$info ="avatars/".$row['username']."_avatar.jpg";
+			}
+			
+		if (file_exists($info)) {
+			$info=$info;
+		} else {
+			$info ="avatars/default.jpg";
+		}
 
-			?>
-				<img src="<?php echo $info; ?>" />
+?>
+		<img src="<?php echo $info; ?>" />
 		</td>
  
  </tr>
  <tr>
  
  <?php 
-    
+    /*
     $sqlFeild1 = "SELECT DISTINCT name FROM personalinfo WHERE id='$id'";
     
     $query = $con->query($sqlFeild1);
@@ -100,13 +115,15 @@ $data = ob_get_clean();
         $name = $row['name'];
     }
     echo "<td>Name: </td><td>$name</td>";
-
+	*/
+	
+	getInfoUserPage('name',$id);
   ?>
  </tr>
  <tr>
  
  <?php 
-    
+    /*
     $sqlFeild1 = "SELECT DISTINCT lastname FROM personalinfo WHERE id='$id'";
     
     $query = $con->query($sqlFeild1);
@@ -116,13 +133,15 @@ $data = ob_get_clean();
         $lastname = $row['lastname'];
     }
     echo "<td>LastName: </td><td>$lastname</td>";
+	*/
+	getInfoUserPage('lastname',$id);
 
   ?>
  </tr>
  <tr>
  
  <?php 
-    
+    /*
     $sqlFeild2 = "SELECT DISTINCT email FROM personalinfo WHERE id='$id'";
     
     $query = $con->query($sqlFeild2);
@@ -132,13 +151,14 @@ $data = ob_get_clean();
         $email = $row['email'];
     }
     echo "<td>Email: </td><td>$email</td>";
-
+*/
+	getInfoUserPage('email',$id);
   ?>
  </tr>
  <tr>
  
  <?php 
-    
+    /*
     $sqlFeild1 = "SELECT DISTINCT age FROM personalinfo WHERE id='$id'";
     
     $query = $con->query($sqlFeild1);
@@ -148,12 +168,14 @@ $data = ob_get_clean();
         $age = $row['age'];
     }
    echo "<td>Age:</td><td> $age</td>";
+   */
+   getInfoUserPage('age',$id);
 
   ?>
  </tr>
   <tr>
   <?php 
-    
+    /*
     $sqlFeild1 = "SELECT DISTINCT gender FROM personalinfo WHERE id='$id'";
     
     $query = $con->query($sqlFeild1);
@@ -163,12 +185,14 @@ $data = ob_get_clean();
         $gender = $row['gender'];
     }
     echo "<td>Gender:</td><td> $gender</td>";
+	*/
+	getInfoUserPage('gender',$id);
 
   ?>
  </tr>
  <tr>
   <?php 
-    
+    /*
     $sqlFeild1 = "SELECT DISTINCT city FROM personalinfo WHERE id='$id'";
     
     $query = $con->query($sqlFeild1);
@@ -178,6 +202,8 @@ $data = ob_get_clean();
         $city = $row['city'];
     }
     echo "<td>City:</td><td> $city</td>";
+	*/
+	getInfoUserPage('city',$id);
 
   ?>
  </tr>
