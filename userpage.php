@@ -105,104 +105,39 @@ $data = ob_get_clean();
  <tr>
  
  <?php 
-    /*
-    $sqlFeild1 = "SELECT DISTINCT name FROM personalinfo WHERE id='$id'";
-    
-    $query = $con->query($sqlFeild1);
-
-    $name="";
-    while($row = $query->fetch_assoc()){
-        $name = $row['name'];
-    }
-    echo "<td>Name: </td><td>$name</td>";
-	*/
-	
 	getInfoUserPage('name',$id);
   ?>
  </tr>
  <tr>
  
  <?php 
-    /*
-    $sqlFeild1 = "SELECT DISTINCT lastname FROM personalinfo WHERE id='$id'";
-    
-    $query = $con->query($sqlFeild1);
-
-    $lastname="";
-    while($row = $query->fetch_assoc()){
-        $lastname = $row['lastname'];
-    }
-    echo "<td>LastName: </td><td>$lastname</td>";
-	*/
 	getInfoUserPage('lastname',$id);
-
   ?>
  </tr>
  <tr>
  
  <?php 
-    /*
-    $sqlFeild2 = "SELECT DISTINCT email FROM personalinfo WHERE id='$id'";
-    
-    $query = $con->query($sqlFeild2);
-
-    $email="";
-    while($row = $query->fetch_assoc()){
-        $email = $row['email'];
-    }
-    echo "<td>Email: </td><td>$email</td>";
-*/
 	getInfoUserPage('email',$id);
   ?>
  </tr>
  <tr>
  
- <?php 
-    /*
-    $sqlFeild1 = "SELECT DISTINCT age FROM personalinfo WHERE id='$id'";
-    
-    $query = $con->query($sqlFeild1);
-
-    $age="";
-    while($row = $query->fetch_assoc()){
-        $age = $row['age'];
-    }
-   echo "<td>Age:</td><td> $age</td>";
-   */
+ <?php
+ 
    getInfoUserPage('age',$id);
 
   ?>
  </tr>
   <tr>
   <?php 
-    /*
-    $sqlFeild1 = "SELECT DISTINCT gender FROM personalinfo WHERE id='$id'";
-    
-    $query = $con->query($sqlFeild1);
-
-    $gender="";
-    while($row = $query->fetch_assoc()){
-        $gender = $row['gender'];
-    }
-    echo "<td>Gender:</td><td> $gender</td>";
-	*/
+  
 	getInfoUserPage('gender',$id);
 
   ?>
  </tr>
  <tr>
   <?php 
-    /*
-    $sqlFeild1 = "SELECT DISTINCT city FROM personalinfo WHERE id='$id'";
-    
-    $query = $con->query($sqlFeild1);
-
-    $city="";
-    while($row = $query->fetch_assoc()){
-        $city = $row['city'];
-    }
-    echo "<td>City:</td><td> $city</td>";
-	*/
+  
 	getInfoUserPage('city',$id);
 
   ?>
