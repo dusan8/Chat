@@ -1,0 +1,39 @@
+body{
+
+	background-image: url('../indexbg.png');
+
+	background-repeat:no-repeat;
+
+	background-size:cover;
+}
+#l {
+	float: left;
+}
+#l input{
+	padding: 5px;
+	font-size: 14px;
+	font-family: Helvetica, Arial;
+	text-transform: uppercase;
+	color: white;
+	background: rgba(0,0,0,0.3);
+	outline: none;
+	border: 1px solid rgba(0,0,0,0.3);
+	box-shadow: inset;
+	margin: auto;
+}
+
+#r {
+	float: right;
+}
+#r input{
+	padding: 5px;
+	font-size: 14px;
+	font-family: Helvetica, Arial;
+	text-transform: uppercase;
+	color: white;
+	background: rgba(0,0,0,0.3);
+	outline: none;
+	border: 1px solid rgba(0,0,0,0.3);
+	box-shadow: inset;
+	margin: auto;
+}

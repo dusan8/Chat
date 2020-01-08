@@ -1,0 +1,151 @@
+
+body{
+
+	background-image: url('../indexbg.png');
+
+	background-repeat:no-repeat;
+
+	background-size:cover;
+}
+.input{
+	display:block;
+	width: 320px;
+	height: 40px;
+	padding: 10px;
+	font-size: 14px;
+	font-family: sans-serif;
+	color: white;
+	background: rgba(0, 0, 0, 0.34);
+	outline: none;
+	border: 1px solid rgba(0,0,0,0.3);
+	box-shadow: inset;
+}
+.input2{
+	display:block;
+	padding: 10px;
+	font-size: 14px;
+	font-family: sans-serif;
+	color: white;
+	background: rgba(0, 0, 0, 0.34);
+	outline: none;
+	border: 1px solid rgba(0,0,0,0.3);
+	box-shadow: inset;
+}
+input::placeholder {
+	color: rgb(202, 205, 209);
+}
+textarea::placeholder {
+	color: rgb(202, 205, 209);
+}
+
+#t1{
+	margin-top:15px;
+	float:right;
+	color:white;
+	font-size:14px;
+
+}
+#textarea{
+	float:right;
+	overflow:scroll;
+	
+}	
+.input3{
+	display:block;
+	padding: 10px;
+	font-size: 14px;
+	font-family: sans-serif;
+	color: white;
+	background: rgba(0, 0, 0, 0.34);
+	outline: none;
+	border: 1px solid rgba(0,0,0,0.3);
+	box-shadow: inset;
+	width:300px;
+}
+#profileinfo{
+	float:left;
+	margin-top:15px;
+
+	
+}
+.input4{
+	display:block;
+	padding: 10px;
+	font-size: 14px;
+	font-family: sans-serif;
+	color: white;
+	background: rgba(0, 0, 0, 0.34);
+	outline: none;
+	border: 1px solid rgba(0,0,0,0.3);
+	box-shadow: inset;
+	width:300px;
+	}
+	.input5{
+	display:block;
+	padding: 5px;
+	font-size: 14px;
+	font-family: sans-serif;
+	color: white;
+	background: rgba(0, 0, 0, 0.34);
+	outline: none;
+	border: 1px solid rgba(0,0,0,0.3);
+	box-shadow: inset;
+	width:342px;
+	}
+#editprofile{
+
+	font-size: 14px;
+	color:white;
+	font-family: sans-serif;
+
+}
+#uinfo{
+	display:block;
+	padding: 20px;
+	font-size: 20px;
+	font-family: sans-serif;
+	color: white;
+	background:rgba(91, 228, 251, 0.27);
+	outline: none;
+	border: 1px solid rgba(0,0,0,0.3);
+	box-shadow: inset;
+	width:300px;
+	height:518px;
+	}
+	.tdp{
+		padding: 10px;
+		color:rgb(129, 197, 255);
+	}
+	.tdp2{
+		color:white;
+	}
+div.scroll{
+	scrollbar-darkshadow-color: black;
+}
+#search{
+	
+	display:block;
+	background: rgba(0, 0, 0, 0.34);
+	float:right;
+	width:320px;
+	height:587px;
+	overflow:auto;
+	outline: none;
+	border: 1px solid rgba(0,0,0,0.3);
+	box-shadow: inset;
+	margin-top:15;
+	
+}
+.input6 {
+	display:block;
+	padding: 10px;
+	font-size: 14px;
+	font-family: sans-serif;
+	color: white;
+	background: rgba(0, 0, 0, 0.34);
+	outline: none;
+	border: 1px solid rgba(0,0,0,0.3);
+	box-shadow: inset;
+	width:278px;
+	
+}

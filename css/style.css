@@ -1,0 +1,130 @@
+/* CSS Document */
+body{
+	font:Verdana;
+	font-size:12px;
+}
+
+#container{
+	width:670px;
+	height:600px;
+	padding:10px;
+	position: absolute;
+	margin-right:25%;
+    margin-left: 25%;
+	/*left: 50%;
+	top: 50%;
+	background: rgba(0, 0, 0, 0.34);*/
+	overflow:hidden;
+}
+.header{
+	background: rgba(0, 0, 0, 0.34);
+	padding:10px;
+	margin:5px;
+	width:650px;
+}
+
+.main{
+	background: rgba(0, 0, 0, 0.34);
+	padding:10px;
+	margin:5px;
+	width:650px;
+	height: 500px;
+}
+
+b
+{
+	text-decoration:none;
+	color:#FFF;	
+}
+
+.uname{
+	color:rgb(237, 214, 123);
+	font-size:14px;
+	font-weight:bold;
+}
+.msg{
+	color:white;
+	font-size:14px;
+}
+.button{
+    padding: 10px 15px;
+    background: #4479BA;
+    color: #FFF;
+	position:absolute;
+}
+#chatlogs{
+	background-color:rgba(58, 107, 111, 0.79);
+	color:rgb(218, 218, 218);
+	padding:5px;
+	height:200px;
+	overflow:scroll;	
+}
+
+
+a{
+	color:rgb(140, 198, 202);
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+h1, h2, h3, h4, h5{
+	margin-bottom:15px;
+}
+h1{
+	text-align:center;
+	font-size:28px;
+}
+h2{
+	text-align:left;
+	font-size:26px;
+	margin-bottom:0px;
+	margin:20px;
+}
+h3{
+	text-align:right;
+	font-size:14px;
+	margin-bottom:0px;
+	overflow:hidden;	
+}
+h4{
+	/*background:rgb(140, 198, 202)*/
+	padding:10px;
+	height:300px;
+	overflow:hidden;
+	margin:10px;
+}
+h5{
+	text-align:left;
+	font-size:14px;
+	padding:20px;
+	margin-bottom:50px;
+	overflow:hidden;
+	color:white;
+	font-weight:normal;
+}
+
+.main table{
+	width:350px;
+	float:right;
+	
+}
+h4 table{
+	width:200px;
+	float:right;
+}
+
+.main table th, h4 table th{
+	padding:10px;
+	background-color:#999;
+	color:#FFF;
+	text-align:center;
+	font-weight:bold;
+}
+.main table td, h4 table td{
+	padding:0px;
+}
+.main tr, h4 tr{
+	background-color:rgb(255, 255, 255,0.3);
+}
+
