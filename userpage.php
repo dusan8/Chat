@@ -7,10 +7,6 @@ require 'index.php';
 $data = ob_get_clean();
 
     $id=$_GET['id'];
-    //$us = $_SESSION['username'];
-		//echo $_SESSION['username'];
-
-	/*	$idsql = "SELECT id FROM login WHERE username='$us'";*/
     $idsql= "SELECT username FROM login WHERE id='$id'";
 		$queryid=$con->query($idsql);
 
@@ -19,32 +15,6 @@ $data = ob_get_clean();
 		while($row = $queryid->fetch_assoc()){
             $username = $row['username'];
 		}
-
-    //echo $username;
-
-
-  /*if(isset($_POST['save'])){
-
-    $name=$_POST['name'];
-    $lastname= $_POST['lastname'];
-    $email=$_POST['email'];
-    $age=$_POST['age'];
-    $gender=$_POST['gender'];
-    $city=$_POST['city'];
-    $password=$_POST['password'];
-
-    echo $id." ".$name." ".$lastname." ".$email." ".$age." ".$gender." ".$city." ".$password;
-
-    $sqlup="UPDATE personalinfo SET name='$name',lastname='$lastname',email='$email',age='$age',gender='$gender',city='$city' where id='$id'";
-    $con->query($sqlup);
-
-    $sqluppw="UPDATE login SET password='$password'";
-    $con->query($sqluppw);
-    header("location: index.php");
-    
-  }else if(isset($_POST['cancel'])){
-   header("location: index.php");
-  }*/
 
 
 
