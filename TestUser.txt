@@ -1,2 +1,0 @@
-username: dule
-password : 1
